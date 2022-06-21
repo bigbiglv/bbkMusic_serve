@@ -1,0 +1,11 @@
+{
+  "user":[
+    {
+      "id": "1",
+      "name": "bigbigking",
+      "email": "2845758942@qq.com",
+      "avatar": "/static/images/avatar/bbk.png",
+      "password": "123456"
+    }
+  ]
+}
