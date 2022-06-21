@@ -4,7 +4,7 @@ const path = require('path');
 const jwt = require('jsonwebtoken');
 
 const secreKey = 'bigbigkingSecreKey'
-const expiresIn = '20s'
+const expiresIn = `${60*60*24}s`
 
 router.post('/user/login',(req, res)=>{
   console.log('req',req.body)
