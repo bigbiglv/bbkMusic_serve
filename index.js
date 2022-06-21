@@ -1,7 +1,12 @@
 
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 5000
+
+//静态资源
+app.use(express.static(path.join(__dirname, '/static')))
+app.use('/static', express.static(path.join(__dirname, '/static')))
 //处理post请求body参数
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
