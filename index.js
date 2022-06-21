@@ -2,6 +2,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+//端口
 const port = 5000
 
 //静态资源
@@ -12,8 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //引入登录模块
 const login = require('./modules/user/login')
-app.use(login)
-
+const userinfo = require('./modules/user/userinfo')
+app.use(login, userinfo)
 app.get('/', (req, res) => {
   // req request  请求对象    主要用来获取用户传递给服务器的数据
   // res response 相应对象    主要用来向用户发送数据
