@@ -18,7 +18,25 @@ router.post('/user/login',(req, res)=>{
         msg:'读取文件失败'
       })
     }else{
-      let result = JSON.parse(dataStr).user[0]
+      let data = JSON.parse(dataStr)
+      // 判断用户是否存在
+      let userInfo = data.user.filter(item => item.name === user.username)
+      if(userInfo.length === 0) {
+        return res.send({
+          result:{},
+          code:500,
+          msg:'用户名不存在'
+        })
+      }
+      let result = userInfo[0]
+      //判断密码是否对应
+      if(result.password !== user.password){
+        return res.send({
+          result:{},
+          code:500,
+          msg:'密码错误'
+        })
+      }
       result['token'] = token
       res.send({
         result,
