@@ -24,7 +24,7 @@ router.post('/user/login',(req, res)=>{
       if(userInfo.length === 0) {
         return res.send({
           result:{},
-          code:500,
+          code:404,
           msg:'用户名不存在'
         })
       }
@@ -33,7 +33,7 @@ router.post('/user/login',(req, res)=>{
       if(result.password !== user.password){
         return res.send({
           result:{},
-          code:500,
+          code:404,
           msg:'密码错误'
         })
       }

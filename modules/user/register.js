@@ -31,7 +31,6 @@ router.post('/user/register',(req, res)=>{
         data.user.push(user)
         fs.writeFile(path.join(__dirname, '../../json/user.json'),JSON.stringify(data),'utf8',function(err){
           if(err){
-            console.log('写入失败',err.message);
             res.send({
               result:{},
               code:500,
@@ -48,7 +47,7 @@ router.post('/user/register',(req, res)=>{
       }else{
         res.send({
           result:{},
-          code:500,
+          code:404,
           msg:'用户名已存在'
         }) 
       }
