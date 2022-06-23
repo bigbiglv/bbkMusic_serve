@@ -19,10 +19,11 @@ app.use(expressjwt({secret: secreKey, algorithms:['HS256']}).unless({path:[/^\/u
 
 
 
-//引入登录模块
+//引入模块
 const login = require('./modules/user/login')
 const userinfo = require('./modules/user/userinfo')
-app.use(login, userinfo)
+const register = require('./modules/user/register')
+app.use(login, userinfo, register)
 
 
 

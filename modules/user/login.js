@@ -7,7 +7,6 @@ const secreKey = 'bigbigkingSecreKey'
 const expiresIn = `${60*60*24}s`
 
 router.post('/user/login',(req, res)=>{
-  console.log('req',req.body)
   let user = req.body
   //生成token 不把密码加密进去
   let token = jwt.sign({name:user.username},secreKey,{expiresIn})
