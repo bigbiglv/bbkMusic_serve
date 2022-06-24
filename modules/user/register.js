@@ -25,6 +25,7 @@ router.post('/user/register',(req, res)=>{
       let data = JSON.parse(dataStr)
       if(data.user.findIndex(item => item.name === user.username) === -1){
         user.name = user.username
+        user.nickname = user.username
         user.avatar = "/static/images/avatar/bbk.png"
         user.id = data.user.length + 1
         //可以注册 将当前信息加进user.json中

@@ -1,1 +1,32 @@
-{"user":[{"id":"1","name":"bigbigking","email":"2845758942@qq.com","avatar":"/static/images/avatar/bbk.png","password":"123456"},{"username":"test","password":"123456","email":"","phone":"","name":"test","avatar":"/static/images/avatar/bbk.png","id":2},{"username":"bigbigking1","password":"123456","email":"","phone":"","name":"bigbigking1","avatar":"/static/images/avatar/bbk.png","id":3}]}
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "bigbigking",
+      "nickname": "bigbigking",
+      "email": "2845758942@qq.com",
+      "avatar": "/static/images/avatar/bbk.png",
+      "password": "123456"
+    },
+    {
+      "username": "test",
+      "nickname": "test",
+      "password": "123456",
+      "email": "",
+      "phone": "",
+      "name": "test",
+      "avatar": "/static/images/avatar/bbk.png",
+      "id": 2
+    },
+    {
+      "username": "bigbigking1",
+      "nickname": "bigbigking1",
+      "password": "123456",
+      "email": "",
+      "phone": "",
+      "name": "bigbigking1",
+      "avatar": "/static/images/avatar/bbk.png",
+      "id": 3
+    }
+  ]
+}
