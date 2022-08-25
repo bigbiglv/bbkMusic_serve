@@ -15,7 +15,7 @@ app.use(express.json());
 //token验证
 const {expressjwt} = require('express-jwt')
 const secreKey = 'bigbigkingSecreKey'
-app.use(expressjwt({secret: secreKey, algorithms:['HS256']}).unless({path:[/^\/user\/login/]}))
+app.use(expressjwt({secret: secreKey, algorithms:['HS256']}).unless({path:[/^\//]}))
 
 
 
