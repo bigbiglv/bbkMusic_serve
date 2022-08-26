@@ -38,6 +38,12 @@ app.get('/search', (req, res) => {
   // res response 相应对象    主要用来向用户发送数据
   res.send({result:'search', code:200})
 })
+app.get('/web/search', (req, res) => {
+  // req request  请求对象    主要用来获取用户传递给服务器的数据
+  // res response 相应对象    主要用来向用户发送数据
+  res.send({ result: 'web/search', code: 200 })
+})
+
 
 //错误级别的中间件
 app.use((err, req, res, next) => {
