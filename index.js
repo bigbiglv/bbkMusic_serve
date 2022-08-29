@@ -3,7 +3,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 //端口
-const port = 5000
+const port = 5001
 //静态资源
 app.use(express.static(path.join(__dirname, '/static')))
 app.use('/static', express.static(path.join(__dirname, '/static')))
