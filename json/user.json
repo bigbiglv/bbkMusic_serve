@@ -2,7 +2,7 @@
   "user": [
     {
       "id": 1,
-      "name": "bigbigking",
+      "username": "bigbigking",
       "nickname": "bigbigking",
       "email": "2845758942@qq.com",
       "avatar": "http://localhost:5000/static/images/avatar/bbk.png",
@@ -14,7 +14,6 @@
       "password": "123456",
       "email": "",
       "phone": "",
-      "name": "test",
       "avatar": "http://localhost:5000/static/images/avatar/bbk.png",
       "id": 2
     },
@@ -24,7 +23,6 @@
       "password": "123456",
       "email": "",
       "phone": "",
-      "name": "bigbigking1",
       "avatar": "http://localhost:5000/static/images/avatar/bbk.png",
       "id": 3
     }
