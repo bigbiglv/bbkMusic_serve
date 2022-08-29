@@ -20,7 +20,7 @@ router.post('/user/login',(req, res)=>{
     }else{
       let data = JSON.parse(dataStr)
       // 判断用户是否存在
-      let userInfo = data.user.filter(item => item.name === user.username)
+      let userInfo = data.user.filter(item => item.username === user.username)
       if(userInfo.length === 0) {
         return res.send({
           result:{},
